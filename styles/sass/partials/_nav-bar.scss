@@ -1,0 +1,35 @@
+@import "variables";
+
+/* Nav-Bar styles */
+
+.logo {
+    display: flex;
+    padding-top: 20px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    width: 50%;
+}
+
+nav li {
+    padding: 20px 0 10px 10px;
+    text-transform: uppercase;
+}
+
+nav a {
+    padding: 10px;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:active {
+    color: $white;
+    background-color: $plum-purple;
+}

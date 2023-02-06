@@ -1,0 +1,15 @@
+@import "variables";
+@import "setup";
+@import "global";
+@import "typography";
+@import "nav-bar";
+@import "footer";
+
+/* Blog page styles */
+
+/* Header styles */
+
+.header-blog {
+    background-image: url(../assets/blog-header.jpg);
+}
+

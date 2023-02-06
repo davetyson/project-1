@@ -1,0 +1,59 @@
+@import "variables";
+
+/* Global & Wrapper Styles */
+html {
+    font-family: $lato;
+    color: $black;
+    body {
+        font-size: 125%;
+        header {
+            background-color: $white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        figure {
+            margin: 0;
+        }
+        button {
+            background-color: $brown-red;
+            color: $white;
+            border: none;
+            padding: 10px;
+        }
+        .comment button,
+        .about button {
+            background-color: $plum-purple;
+        }
+        .header-contact h1,
+        .header-blog h1 {
+            display: flex;
+            padding-top: 30vh;
+            justify-content: center;
+        }
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+        }
+        .wrapper {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
