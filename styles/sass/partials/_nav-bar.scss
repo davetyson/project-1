@@ -13,6 +13,10 @@
     display: flex;
 }
 
+nav {
+    margin-left: auto;
+}
+
 nav ul {
     display: flex;
     width: 50%;
@@ -21,6 +25,8 @@ nav ul {
 nav li {
     padding: 20px 0 10px 10px;
     text-transform: uppercase;
+    display: inline-block;
+    justify-content: right;
 }
 
 nav a {
@@ -28,6 +34,7 @@ nav a {
     text-align: center;
 }
 
+.current-page,
 nav a:hover,
 nav a:active {
     color: $white;

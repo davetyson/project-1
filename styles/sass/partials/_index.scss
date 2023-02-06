@@ -22,3 +22,58 @@
 span {
     display: block;
 }
+
+.header-content {
+    position: absolute;
+}
+
+.header-content figure {
+    position: relative;
+    top: 30vh;
+    margin-left: auto;
+    flex-basis: auto;
+}
+
+/* Section styles */
+
+/* About section */
+.about {
+    background-color: $pale-mauve;
+    text-align: center;
+    justify-content: center;
+}
+
+.about .flexbox {
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 140px 0 40px;
+}
+
+/* New additions & too many options section */
+
+.new-too .flexbox{
+    flex-direction: column;
+}
+
+.new-too figure,
+.new-too .flexbox {
+    width: 50%;
+    margin: 50px;
+}
+
+.options {
+    text-align: right;
+}
+
+/* Icon contact section */
+
+.iconbox h2,
+.iconbox p {
+    display: inline-block;
+}
+
+.iconbox {
+    display: flex;
+    flex-direction: column;
+}

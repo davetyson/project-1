@@ -3,6 +3,7 @@
 /* Global & Wrapper Styles */
 html {
     font-family: $lato;
+    background-color: $white;
     color: $black;
     body {
         font-size: 125%;
@@ -12,6 +13,9 @@ html {
             background-repeat: no-repeat;
             background-size: cover;
             min-height: 100vh;
+        }
+        section {
+            height: 100%;
         }
         img {
             max-width: 100%;
@@ -35,6 +39,8 @@ html {
             color: $white;
             border: none;
             padding: 10px;
+            width: 30%;
+            margin: 0 auto;
         }
         .comment button,
         .about button {

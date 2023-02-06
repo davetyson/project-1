@@ -229,6 +229,7 @@ html {
 /* Global & Wrapper Styles */
 html {
   font-family: "Lato", sans-serif;
+  background-color: #FFF;
   color: #0D0D0D;
 }
 html body {
@@ -240,6 +241,9 @@ html body header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+html body section {
+  height: 100%;
 }
 html body img {
   max-width: 100%;
@@ -263,6 +267,8 @@ html body button {
   color: #FFF;
   border: none;
   padding: 10px;
+  width: 30%;
+  margin: 0 auto;
 }
 html body .comment button,
 html body .about button {
@@ -381,6 +387,10 @@ button {
   display: flex;
 }
 
+nav {
+  margin-left: auto;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,6 +401,10 @@ nav ul {
 nav li {
   padding: 20px 0 10px 10px;
   text-transform: uppercase;
+  display: inline-block;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 nav a {
@@ -398,6 +412,7 @@ nav a {
   text-align: center;
 }
 
+.current-page,
 nav a:hover,
 nav a:active {
   color: #FFF;
@@ -644,6 +659,7 @@ html {
 /* Global & Wrapper Styles */
 html {
   font-family: "Lato", sans-serif;
+  background-color: #FFF;
   color: #0D0D0D;
 }
 html body {
@@ -655,6 +671,9 @@ html body header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+html body section {
+  height: 100%;
 }
 html body img {
   max-width: 100%;
@@ -678,6 +697,8 @@ html body button {
   color: #FFF;
   border: none;
   padding: 10px;
+  width: 30%;
+  margin: 0 auto;
 }
 html body .comment button,
 html body .about button {
@@ -796,6 +817,10 @@ button {
   display: flex;
 }
 
+nav {
+  margin-left: auto;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,6 +831,10 @@ nav ul {
 nav li {
   padding: 20px 0 10px 10px;
   text-transform: uppercase;
+  display: inline-block;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 nav a {
@@ -813,6 +842,7 @@ nav a {
   text-align: center;
 }
 
+.current-page,
 nav a:hover,
 nav a:active {
   color: #FFF;
@@ -843,6 +873,72 @@ span {
   display: block;
 }
 
+.header-content {
+  position: absolute;
+}
+
+.header-content figure {
+  position: relative;
+  top: 30vh;
+  margin-left: auto;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+/* Section styles */
+/* About section */
+.about {
+  background-color: #FAE5FF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .flexbox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 140px 0 40px;
+}
+
+/* New additions & too many options section */
+.new-too .flexbox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new-too figure,
+.new-too .flexbox {
+  width: 50%;
+  margin: 50px;
+}
+
+.options {
+  text-align: right;
+}
+
+/* Icon contact section */
+.iconbox h2,
+.iconbox p {
+  display: inline-block;
+}
+
+.iconbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -1074,6 +1170,7 @@ html {
 /* Global & Wrapper Styles */
 html {
   font-family: "Lato", sans-serif;
+  background-color: #FFF;
   color: #0D0D0D;
 }
 html body {
@@ -1085,6 +1182,9 @@ html body header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+html body section {
+  height: 100%;
 }
 html body img {
   max-width: 100%;
@@ -1108,6 +1208,8 @@ html body button {
   color: #FFF;
   border: none;
   padding: 10px;
+  width: 30%;
+  margin: 0 auto;
 }
 html body .comment button,
 html body .about button {
@@ -1226,6 +1328,10 @@ button {
   display: flex;
 }
 
+nav {
+  margin-left: auto;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1236,6 +1342,10 @@ nav ul {
 nav li {
   padding: 20px 0 10px 10px;
   text-transform: uppercase;
+  display: inline-block;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 nav a {
@@ -1243,6 +1353,7 @@ nav a {
   text-align: center;
 }
 
+.current-page,
 nav a:hover,
 nav a:active {
   color: #FFF;
@@ -1495,6 +1606,7 @@ html {
 /* Global & Wrapper Styles */
 html {
   font-family: "Lato", sans-serif;
+  background-color: #FFF;
   color: #0D0D0D;
 }
 html body {
@@ -1506,6 +1618,9 @@ html body header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+html body section {
+  height: 100%;
 }
 html body img {
   max-width: 100%;
@@ -1529,6 +1644,8 @@ html body button {
   color: #FFF;
   border: none;
   padding: 10px;
+  width: 30%;
+  margin: 0 auto;
 }
 html body .comment button,
 html body .about button {
@@ -1647,6 +1764,10 @@ button {
   display: flex;
 }
 
+nav {
+  margin-left: auto;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1657,6 +1778,10 @@ nav ul {
 nav li {
   padding: 20px 0 10px 10px;
   text-transform: uppercase;
+  display: inline-block;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 nav a {
@@ -1664,6 +1789,7 @@ nav a {
   text-align: center;
 }
 
+.current-page,
 nav a:hover,
 nav a:active {
   color: #FFF;
