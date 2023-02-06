@@ -948,15 +948,20 @@ span {
 .icon-contact {
   background-color: #FAE5FF;
   padding: 40px 0;
+  width: 100%;
 }
 
-.iconbox h2,
+.iconbox h2 {
+  display: block;
+}
+
 .iconbox p {
   display: inline-block;
 }
 
 .icon-contact .flexbox {
   margin: 20px 60px;
+  width: 100%;
 }
 
 .iconbox {
