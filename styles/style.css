@@ -368,6 +368,16 @@ button {
   letter-spacing: 0.05rem;
 }
 
+.fa {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #4C0341;
+}
+
+i {
+  margin-right: 20px;
+}
+
 /* Nav-Bar styles */
 .logo {
   display: -webkit-box;
@@ -798,6 +808,16 @@ button {
   letter-spacing: 0.05rem;
 }
 
+.fa {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #4C0341;
+}
+
+i {
+  margin-right: 20px;
+}
+
 /* Nav-Bar styles */
 .logo {
   display: -webkit-box;
@@ -889,6 +909,7 @@ span {
 /* About section */
 .about {
   background-color: #FAE5FF;
+  padding: 20px 0;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -924,9 +945,18 @@ span {
 }
 
 /* Icon contact section */
+.icon-contact {
+  background-color: #FAE5FF;
+  padding: 40px 0;
+}
+
 .iconbox h2,
 .iconbox p {
   display: inline-block;
+}
+
+.icon-contact .flexbox {
+  margin: 20px 60px;
 }
 
 .iconbox {
@@ -1307,6 +1337,16 @@ button {
 
 button {
   letter-spacing: 0.05rem;
+}
+
+.fa {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #4C0341;
+}
+
+i {
+  margin-right: 20px;
 }
 
 /* Nav-Bar styles */
@@ -1743,6 +1783,16 @@ button {
 
 button {
   letter-spacing: 0.05rem;
+}
+
+.fa {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #4C0341;
+}
+
+i {
+  margin-right: 20px;
 }
 
 /* Nav-Bar styles */

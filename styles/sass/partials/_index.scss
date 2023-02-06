@@ -39,6 +39,7 @@ span {
 /* About section */
 .about {
     background-color: $pale-mauve;
+    padding: 20px 0;
     text-align: center;
     justify-content: center;
 }
@@ -68,9 +69,18 @@ span {
 
 /* Icon contact section */
 
+.icon-contact {
+    background-color: $pale-mauve;
+    padding: 40px 0;
+}
+
 .iconbox h2,
 .iconbox p {
     display: inline-block;
+}
+
+.icon-contact .flexbox {
+    margin: 20px 60px;
 }
 
 .iconbox {
