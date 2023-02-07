@@ -38,30 +38,39 @@ span {
         flex-direction: column;
         width: 70%;
         margin: 0 auto;
-        padding: 140px 0 40px;
+        padding: 140px 0 140px;
     }
 }
 
 /* New additions & too many options section */
 
 .new-too {
-    // position: relative;
+    .new-too-breakout1,
+    .new-too-breakout2 {
+        position: relative;
+        flex-grow: 1;
+        margin: 0;
+        figure {
+            position: absolute;
+        }
+    }
+    .new-too-breakout1 {
+        bottom: 10vh;
+    }
+    .new-too-breakout2 {
+        top: 10vh;
+    }
     .flexbox{
     flex-direction: column;
     }
         figure {
             box-shadow: $box-shadow;
-            // position: absolute;
-            // bottom: 50px;
         }
         .reverse-box {
             box-shadow: -20px 20px $orange;
-            // position: absolute;
-            // top: 50px;
         }
 }
 
-.new-too figure,
 .new-too .flexbox {
     width: 50%;
     margin: 50px;
@@ -75,7 +84,7 @@ span {
 
 .icon-contact {
     background-color: $pale-mauve;
-    padding: 40px 0;
+    padding: 180px 0 40px 0;
     flex-grow: 1;
     .flexbox {
         margin: 10px;
