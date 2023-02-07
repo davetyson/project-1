@@ -7,3 +7,92 @@
 .header-blog {
     background-image: url(../assets/blog-header.jpg);
 }
+
+/* Blog post section */
+
+.blog-main {
+    flex-basis: 1;
+    background-color: $pale-mauve;
+    .flexbox {
+        flex-direction: column;
+    }
+    .blog-wrap {
+        flex-wrap: wrap;
+        margin: -30px;
+    }
+    h2 {
+        margin-top: -35%;
+    }
+}
+
+.blog-section,
+aside {
+    background-color: $white;
+}
+
+.blog-section {
+    width: 55%;
+    align-self: flex-end;
+    position: absolute;
+    top: 80vh;
+    height: auto;
+    figure {
+        box-shadow: -20px 20px $orange;
+    }
+    h2 {
+        margin: 50px 30px;
+    }
+    p {
+        margin: 30px;
+    }
+}
+
+.comment {
+    width: 55%;
+    align-self: flex-end;
+    margin: 100px 30px 30px 30px;
+    .flexbox {
+        flex-direction: row;
+    }
+    figure {
+        min-width: 20%;
+        margin-top: 20px;
+    }
+    // form,
+    // button,
+    // input,
+    // textarea {
+    //     width: 100%;
+    // }
+}
+
+.iconbox {
+    flex-grow: 1;
+    .bold-comment {
+        font-weight: bold;
+    }
+    .flexbox {
+        flex-direction: column;
+    }
+}
+
+aside {
+    order: -1;
+    flex-grow: 1;
+    width: 25%;
+    margin: 50px;
+    padding: 35% 50px 50px 50px;
+    position: relative;
+    figure {
+        width: 150%;
+        position: absolute;
+        top: 10px;
+        right: 5%;
+    }
+    ul {
+        list-style: disc;
+    }
+    h4 {
+        margin: 20px 0;
+    }
+}

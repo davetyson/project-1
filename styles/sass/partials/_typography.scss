@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6,
     font-family: $pompiere;
 }
 
+h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
 .header-index h1 {
     font-size: 5.5rem;
     line-height: 64px;

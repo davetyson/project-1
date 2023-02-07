@@ -45,15 +45,20 @@ span {
 /* New additions & too many options section */
 
 .new-too {
+    // position: relative;
     .flexbox{
     flex-direction: column;
     }
-    figure {
-        box-shadow: $box-shadow;
-    }
-    .reverse-box {
-        box-shadow: -20px 20px $orange;
-    }
+        figure {
+            box-shadow: $box-shadow;
+            // position: absolute;
+            // bottom: 50px;
+        }
+        .reverse-box {
+            box-shadow: -20px 20px $orange;
+            // position: absolute;
+            // top: 50px;
+        }
 }
 
 .new-too figure,

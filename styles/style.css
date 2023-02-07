@@ -293,6 +293,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-transform: uppercase;
 }
 
 .flexbox {
@@ -317,6 +318,10 @@ h1, h2, h3, h4, h5, h6,
   margin: 0;
   color: #4C0341;
   font-family: "Pompiere", cursive;
+}
+
+h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
 }
 
 .header-index h1 {
@@ -588,8 +593,121 @@ span {
   background-image: url(../assets/blog-header.jpg);
 }
 
+/* Blog post section */
+.blog-main {
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  background-color: #FAE5FF;
+}
+.blog-main .flexbox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-main .blog-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -30px;
+}
+.blog-main h2 {
+  margin-top: -35%;
+}
+
+.blog-section,
+aside {
+  background-color: #FFF;
+}
+
+.blog-section {
+  width: 55%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  top: 80vh;
+  height: auto;
+}
+.blog-section figure {
+  -webkit-box-shadow: -20px 20px #FE6F19;
+          box-shadow: -20px 20px #FE6F19;
+}
+.blog-section h2 {
+  margin: 50px 30px;
+}
+.blog-section p {
+  margin: 30px;
+}
+
+.comment {
+  width: 55%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 100px 30px 30px 30px;
+}
+.comment .flexbox {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.comment figure {
+  min-width: 20%;
+  margin-top: 20px;
+}
+
+.iconbox {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.iconbox .bold-comment {
+  font-weight: bold;
+}
+.iconbox .flexbox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 25%;
+  margin: 50px;
+  padding: 35% 50px 50px 50px;
+  position: relative;
+}
+aside figure {
+  width: 150%;
+  position: absolute;
+  top: 10px;
+  right: 5%;
+}
+aside ul {
+  list-style: disc;
+}
+aside h4 {
+  margin: 20px 0;
+}
+
 /* Contact page styles */
 /* Header styles */
 .header-contact {
   background-image: url(../assets/contact-image.jpg);
+}
+
+/* Contact section */
+.contact-section {
+  background-color: #FAE5FF;
+}
+.contact-section .contact-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

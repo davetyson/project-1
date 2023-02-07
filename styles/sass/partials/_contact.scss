@@ -7,3 +7,13 @@
 .header-contact {
     background-image: url(../assets/contact-image.jpg);
 }
+
+/* Contact section */
+
+.contact-section {
+    background-color: $pale-mauve;
+
+    .contact-info {
+        flex-direction: column;
+    }
+}
