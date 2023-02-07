@@ -38,7 +38,9 @@ aside {
     top: 50vh;
     height: auto;
     figure {
+        img {
         box-shadow: -20px 20px $orange;
+        }
     }
     h2 {
         margin: 50px 30px;
@@ -51,7 +53,7 @@ aside {
 .comment {
     width: 55%;
     align-self: flex-end;
-    margin: 120px 30px 30px 30px;
+    margin: 100px 30px 30px 30px;
     .flexbox {
         flex-direction: row;
     }

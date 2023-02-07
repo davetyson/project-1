@@ -58,16 +58,20 @@ span {
         bottom: 10vh;
     }
     .new-too-breakout2 {
-        top: 10vh;
+        top: 7vh;
     }
     .flexbox{
     flex-direction: column;
     }
         figure {
-            box-shadow: $box-shadow;
+            img {
+                box-shadow: $box-shadow;
+                }
         }
         .reverse-box {
+            img{
             box-shadow: -20px 20px $orange;
+            }
         }
 }
 
@@ -84,7 +88,7 @@ span {
 
 .icon-contact {
     background-color: $pale-mauve;
-    padding: 180px 0 40px 0;
+    padding: 145px 0 40px 0;
     flex-grow: 1;
     .flexbox {
         margin: 10px;
@@ -105,13 +109,19 @@ span {
 
 /* Popular this month */
 
+.popular-section {
+    padding: 30px 0 40px 0;
+}
+
 .popular-div {
     justify-content: center;
     figure {
         display: block;
         max-width: 40%;
         margin: 30px 0;
+        img {
         box-shadow: $box-shadow;
+        }
     }
 }
 
