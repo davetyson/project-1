@@ -1,10 +1,4 @@
-@import "variables";
-@import "setup";
-@import "global";
-@import "typography";
-@import "nav-bar";
-@import "footer";
-
+@use "./variables" as *;
 
 /* Home page styles */
 
@@ -12,11 +6,10 @@
 
 .header-index {
     background-image: url(../assets/header-image.jpg);
-}
-
-.header-index h1 {
-    margin-top: 40px;
-    width: 100%;
+    h1 {
+        margin-top: 40px;
+        width: 100%;
+    }
 }
 
 span {
@@ -25,13 +18,12 @@ span {
 
 .header-content {
     position: absolute;
-}
-
-.header-content figure {
-    position: relative;
-    top: 30vh;
-    margin-left: auto;
-    flex-basis: auto;
+    figure {
+        position: relative;
+        top: 50vh;
+        margin-left: auto;
+        flex-basis: auto;
+    }
 }
 
 /* Section styles */
@@ -42,13 +34,12 @@ span {
     padding: 20px 0;
     text-align: center;
     justify-content: center;
-}
-
-.about .flexbox {
-    flex-direction: column;
-    width: 70%;
-    margin: 0 auto;
-    padding: 140px 0 40px;
+    .flexbox {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+        padding: 140px 0 40px;
+    }
 }
 
 /* New additions & too many options section */
@@ -72,22 +63,50 @@ span {
 .icon-contact {
     background-color: $pale-mauve;
     padding: 40px 0;
-    width: 100%;
-}
-
-.iconbox h2 {
-    display: block;
-}
-.iconbox p {
-    display: inline-block;
-}
-
-.icon-contact .flexbox {
-    margin: 20px 60px;
-    width: 100%;
+    flex-grow: 1;
+    // width: 100%;
+    .flexbox {
+        margin: 10px;
+        flex-grow: 1;
+    }
 }
 
 .iconbox {
     display: flex;
     flex-direction: column;
+    h2 {
+    display: block;
+    }
+    p {
+        display: inline-block;
+    }
+}
+
+/* Popular this month */
+
+.popular-div {
+    justify-content: center;
+    figure {
+        display: block;
+        max-width: 40%;
+        margin: 30px 0;
+    }
+}
+
+.popular-typography {
+    flex-direction: column;
+    width: 60%;
+    margin: 30px 0 30px 30px;
+    button {
+        margin: 0;
+    }
+}
+
+/* Gallery styles */
+
+.gallery-section {
+    background-color: $pale-mauve;
+    figure {
+        margin: 50px 30px;
+    }
 }

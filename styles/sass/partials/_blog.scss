@@ -1,9 +1,4 @@
-@import "variables";
-@import "setup";
-@import "global";
-@import "typography";
-@import "nav-bar";
-@import "footer";
+@use "./variables" as *;
 
 /* Blog page styles */
 

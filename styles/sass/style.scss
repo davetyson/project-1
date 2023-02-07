@@ -1,11 +1,11 @@
-@use "partials/setup";
-@use "partials/global";
-@use "partials/typography";
-@use "partials/mixins";
-@use "partials/variables";
-@use "partials/nav-bar";
-@use "partials/footer";
-@use "partials/index";
-@use "partials/blog";
-@use "partials/contact";
+@use "./partials/setup";
+@use "./partials/global";
+@use "./partials/typography";
+@use "./partials/mixins";
+@use "./partials/variables";
+@use "./partials/nav-bar";
+@use "./partials/footer";
+@use "./partials/index";
+@use "./partials/blog";
+@use "./partials/contact";
 
