@@ -642,7 +642,7 @@ aside {
   width: 55%;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin: 100px 30px 30px 30px;
+  margin: 120px 30px 30px 30px;
 }
 .comment .flexbox {
   -webkit-box-orient: horizontal;
@@ -668,6 +668,49 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.comment-form {
+  width: 100%;
+  margin: 0 auto;
+}
+.comment-form form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.comment-form form input,
+.comment-form form textarea {
+  width: 100%;
+}
+.comment-form form input {
+  border: none;
+  border-bottom: 1px solid #FE6F19;
+  background-color: transparent;
+}
+.comment-form form textarea {
+  border: 1px solid #FE6F19;
+  background-color: transparent;
+  height: 15vh;
+}
+.comment-form form #name {
+  margin-right: 10px;
+}
+.comment-form form #email {
+  margin-left: 10px;
+}
+.comment-form form textarea {
+  margin: 10px 0;
+}
+.comment-form form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
 }
 
 aside {

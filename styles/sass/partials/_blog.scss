@@ -50,7 +50,7 @@ aside {
 .comment {
     width: 55%;
     align-self: flex-end;
-    margin: 100px 30px 30px 30px;
+    margin: 120px 30px 30px 30px;
     .flexbox {
         flex-direction: row;
     }
@@ -73,6 +73,47 @@ aside {
     }
     .flexbox {
         flex-direction: column;
+    }
+}
+
+.comment-form {
+    width: 100%;
+    margin: 0 auto;
+    form {
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        input,
+        textarea {
+            width: 100%;
+        }
+        input {
+            border: none;
+            border-bottom: 1px solid $orange;
+            background-color: transparent;
+        }
+        textarea {
+            border: 1px solid $orange;
+            background-color: transparent;
+            height: 15vh;
+        }
+        #name {
+            margin-right: 10px;
+        }
+        #email {
+            margin-left: 10px;
+        }
+        textarea {
+            margin: 10px 0;
+        }
+        button {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 20px 0;
+        }
     }
 }
 
