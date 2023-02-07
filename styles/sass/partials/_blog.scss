@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 /* Blog page styles */
 
@@ -34,7 +35,7 @@ aside {
     width: 55%;
     align-self: flex-end;
     position: absolute;
-    top: 80vh;
+    top: 50vh;
     height: auto;
     figure {
         box-shadow: -20px 20px $orange;
@@ -58,12 +59,6 @@ aside {
         min-width: 20%;
         margin-top: 20px;
     }
-    // form,
-    // button,
-    // input,
-    // textarea {
-    //     width: 100%;
-    // }
 }
 
 .iconbox {
@@ -80,24 +75,19 @@ aside {
     width: 100%;
     margin: 0 auto;
     form {
-        fieldset {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
         input,
         textarea {
             width: 100%;
         }
         input {
-            border: none;
-            border-bottom: 1px solid $orange;
-            background-color: transparent;
+            @include form-input(none);
+        }
+        input:focus,
+        textarea:focus {
+            outline: 0;
         }
         textarea {
-            border: 1px solid $orange;
-            background-color: transparent;
-            height: 15vh;
+            @include form-textarea(15vh);
         }
         #name {
             margin-right: 10px;
@@ -109,10 +99,7 @@ aside {
             margin: 10px 0;
         }
         button {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            margin: 20px 0;
+            @include form-button(100%);
         }
     }
 }

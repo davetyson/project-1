@@ -1,0 +1,20 @@
+@use "./variables" as *;
+
+@mixin form-input($border) {
+    border: $border;
+    border-bottom: 1px solid $orange;
+    background-color: transparent;
+}
+
+@mixin form-textarea($height) {
+    border: 1px solid $orange;
+    background-color: transparent;
+    height: $height;
+}
+
+@mixin form-button($width) {
+    display: flex;
+    width: $width;
+    justify-content: center;
+    margin: 20px 0;
+}

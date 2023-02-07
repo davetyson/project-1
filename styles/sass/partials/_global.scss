@@ -33,6 +33,11 @@ ul {
     margin: 0;
     padding: 0;
 }
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 figure {
     margin: 0;
 }
@@ -47,6 +52,11 @@ button {
 .comment button,
 .about button {
     background-color: $plum-purple;
+}
+
+.header-contact,
+.header-blog {
+    height: 70vh;
 }
 .header-contact h1,
 .header-blog h1 {

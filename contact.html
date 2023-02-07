@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -45,10 +46,10 @@
                     <!-- Contact info block -->
                     <div class="contact-info flexbox">
                         <div class="flexbox">
-                            <i>Insert FA Facebook icon</i>
-                            <i>Insert FA IG icon</i>
-                            <i>Insert FA Twitter icon</i>
-                            <i>Insert FA WhatsApp icon</i>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                         </div>
                         <h3>info@email.com</h3>
                         <p>123-456-7890</p>
@@ -58,18 +59,22 @@
                     </div>
 
                     <!-- Contact form -->
-                    <div class="contact">
-                        <form action="">
-                            <fieldset>
-                                <label class="sr-only" for="name">Name</label>
-                                <input id="name" type="name" placeholder="Name">
-                                <label class="sr-only" for="email">Email address</label>
-                                <input id="email" type="email" placeholder="Email address">
-                                <label class="sr-only" for="message">Message</label>
-                                <textarea id="message" type="message">Message</textarea>
-                            </fieldset>
-                            <button type="submit">Submit</button>
-                        </form>
+                    <div class="contact-position">
+                        <div class="contact-form">
+                            <form action="">
+                                <fieldset>
+                                    <div class="flexbox">
+                                        <label class="sr-only" for="name">Name</label>
+                                        <input id="name" type="name" placeholder="Name">
+                                        <label class="sr-only" for="email">Email address</label>
+                                        <input id="email" type="email" placeholder="Email address">
+                                    </div>
+                                    <label class="sr-only" for="message">Message</label>
+                                    <textarea id="message" type="message">Message</textarea>
+                                </fieldset>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

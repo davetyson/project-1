@@ -266,6 +266,12 @@ ul {
   padding: 0;
 }
 
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 figure {
   margin: 0;
 }
@@ -282,6 +288,11 @@ button {
 .comment button,
 .about button {
   background-color: #4C0341;
+}
+
+.header-contact,
+.header-blog {
+  height: 70vh;
 }
 
 .header-contact h1,
@@ -624,7 +635,7 @@ aside {
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: absolute;
-  top: 80vh;
+  top: 50vh;
   height: auto;
 }
 .blog-section figure {
@@ -674,11 +685,6 @@ aside {
   width: 100%;
   margin: 0 auto;
 }
-.comment-form form fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
 .comment-form form input,
 .comment-form form textarea {
   width: 100%;
@@ -687,6 +693,10 @@ aside {
   border: none;
   border-bottom: 1px solid #FE6F19;
   background-color: transparent;
+}
+.comment-form form input:focus,
+.comment-form form textarea:focus {
+  outline: 0;
 }
 .comment-form form textarea {
   border: 1px solid #FE6F19;
@@ -742,15 +752,88 @@ aside h4 {
 /* Header styles */
 .header-contact {
   background-image: url(../assets/contact-image.jpg);
+  background-position: 0;
 }
 
 /* Contact section */
 .contact-section {
   background-color: #FAE5FF;
+  height: 30vh;
 }
 .contact-section .contact-info {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: -30px;
+}
+.contact-section .contact-info .flexbox {
+  margin-right: 200px;
+}
+.contact-section .contact-info h3 {
+  margin-top: 2vh;
+}
+.contact-section .contact-info p {
+  margin: 5px 0;
+}
+
+i {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  margin-top: 2vh;
+}
+
+.contact-position {
+  position: relative;
+  width: 100%;
+}
+.contact-position .contact-form {
+  width: 50vw;
+  margin: 0 auto;
+  -webkit-box-shadow: -30px 30px #FE6F19;
+          box-shadow: -30px 30px #FE6F19;
+  position: absolute;
+  bottom: -1vh;
+}
+.contact-position .contact-form form {
+  background-color: #FFF;
+  padding: 40px;
+}
+.contact-position .contact-form form input,
+.contact-position .contact-form form textarea {
+  width: 100%;
+}
+.contact-position .contact-form form input {
+  border: none;
+  border-bottom: 1px solid #FE6F19;
+  background-color: transparent;
+}
+.contact-position .contact-form form input:focus,
+.contact-position .contact-form form textarea:focus {
+  outline: 0;
+}
+.contact-position .contact-form form textarea {
+  border: 1px solid #FE6F19;
+  background-color: transparent;
+  height: 15vh;
+}
+.contact-position .contact-form form #name {
+  margin-right: 10px;
+}
+.contact-position .contact-form form #email {
+  margin-left: 10px;
+}
+.contact-position .contact-form form textarea {
+  margin: 10px 0;
+}
+.contact-position .contact-form form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
 }
