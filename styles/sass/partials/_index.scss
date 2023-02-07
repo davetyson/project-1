@@ -44,8 +44,16 @@ span {
 
 /* New additions & too many options section */
 
-.new-too .flexbox{
+.new-too {
+    .flexbox{
     flex-direction: column;
+    }
+    figure {
+        box-shadow: $box-shadow;
+    }
+    .reverse-box {
+        box-shadow: -20px 20px $orange;
+    }
 }
 
 .new-too figure,
@@ -90,13 +98,14 @@ span {
         display: block;
         max-width: 40%;
         margin: 30px 0;
+        box-shadow: $box-shadow;
     }
 }
 
 .popular-typography {
     flex-direction: column;
     width: 60%;
-    margin: 30px 0 30px 30px;
+    margin: 30px 0 30px 50px;
     button {
         margin: 0;
     }
@@ -108,5 +117,6 @@ span {
     background-color: $pale-mauve;
     figure {
         margin: 50px 30px;
+        width: calc((100% / 3) - 60px);
     }
 }
