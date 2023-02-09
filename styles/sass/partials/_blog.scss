@@ -35,7 +35,7 @@ aside {
     width: 55%;
     align-self: flex-end;
     position: absolute;
-    top: 50vh;
+    top: 70vh;
     height: auto;
     figure {
         img {
@@ -53,13 +53,13 @@ aside {
 .comment {
     width: 55%;
     align-self: flex-end;
-    margin: 100px 30px 30px 30px;
+    margin: 110px 30px 30px 30px;
     .flexbox {
         flex-direction: row;
     }
     figure {
         min-width: 20%;
-        margin-top: 20px;
+        margin: 20px 15px 0 0;
     }
 }
 

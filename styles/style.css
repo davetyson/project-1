@@ -292,7 +292,7 @@ button {
 
 .header-contact,
 .header-blog {
-  height: 70vh;
+  height: 100vh;
 }
 
 .header-contact h1,
@@ -480,7 +480,7 @@ span {
 }
 .header-content figure {
   position: relative;
-  top: 50vh;
+  top: 40vh;
   margin-left: auto;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
@@ -523,7 +523,7 @@ span {
   bottom: 10vh;
 }
 .new-too .new-too-breakout2 {
-  top: 7vh;
+  top: 10vh;
 }
 .new-too .flexbox {
   -webkit-box-orient: vertical;
@@ -658,7 +658,7 @@ aside {
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: absolute;
-  top: 50vh;
+  top: 70vh;
   height: auto;
 }
 .blog-section figure img {
@@ -676,7 +676,7 @@ aside {
   width: 55%;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin: 100px 30px 30px 30px;
+  margin: 110px 30px 30px 30px;
 }
 .comment .flexbox {
   -webkit-box-orient: horizontal;
@@ -686,7 +686,7 @@ aside {
 }
 .comment figure {
   min-width: 20%;
-  margin-top: 20px;
+  margin: 20px 15px 0 0;
 }
 
 .iconbox {
@@ -781,7 +781,7 @@ aside h4 {
 /* Contact section */
 .contact-section {
   background-color: #FAE5FF;
-  height: 30vh;
+  height: 40vh;
 }
 .contact-section .contact-info {
   -webkit-box-orient: vertical;
@@ -813,12 +813,12 @@ i {
   width: 100%;
 }
 .contact-position .contact-form {
-  width: 50vw;
+  width: calc(50vw - 10%);
   margin: 0 auto;
   -webkit-box-shadow: -30px 30px #FE6F19;
           box-shadow: -30px 30px #FE6F19;
   position: absolute;
-  bottom: -1vh;
+  bottom: 5vh;
 }
 .contact-position .contact-form form {
   background-color: #FFF;

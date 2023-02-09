@@ -14,7 +14,7 @@
 
 .contact-section {
     background-color: $pale-mauve;
-    height: 30vh;
+    height: 40vh;
     .contact-info {
         flex-direction: column;
         margin-bottom: -30px;
@@ -42,11 +42,11 @@ i {
     position: relative;
     width: 100%;
     .contact-form {
-        width: 50vw;
+        width: calc(50vw - 10%);
         margin: 0 auto;
         box-shadow: -30px 30px $orange;
         position: absolute;
-        bottom: -1vh;
+        bottom: 5vh;
         form {
             background-color: $white;
             padding: 40px;
