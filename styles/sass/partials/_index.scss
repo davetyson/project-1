@@ -14,17 +14,37 @@
 }
 
 span {
-    display: block;
+    @include mq('phablet'){
+        display: block;
+    }
 }
 
 .header-content {
-    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    @include mq('phablet'){
+        position: absolute;
+        flex-direction: row;
+        text-align: left;
+    }
+    h1 {
+        padding-top: 60px;
+        @include mq('phablet'){
+            padding-top: 0px;
+        }
+    }
     figure {
-        position: relative;
-        top: 45vh;
-        margin-left: auto;
-        flex-basis: auto;
-        transition: 0.5;
+        margin: 0 auto;
+        padding: 150px 50px 0 50px;
+        // display: block;
+        @include mq('phablet') {
+            position: relative;
+            top: 35vh;
+            margin-left: auto;
+            flex-basis: auto;
+        }
     }
     @include mqv('vertical-break2') {
         top: 15vh;
@@ -42,9 +62,12 @@ span {
 /* About section */
 .about {
     background-color: $pale-mauve;
-    padding: 20px 0;
     text-align: center;
     justify-content: center;
+    padding: 50px 0 0 0;
+    @include mq('phablet'){
+        padding: 50px 0;
+    }
     .flexbox {
         flex-direction: column;
         width: 70%;
@@ -55,14 +78,36 @@ span {
 
 /* New additions & too many options section */
 
+.new-too-section {
+    padding: 30px 0 30px 0;
+}
+
+.new-too-section .wrapper,
 .new-too {
+    flex-flow: column wrap;
+    align-items: center;
+    @include mq('tablet-wide'){
+        flex-flow: row nowrap;
+        align-items: flex-start;
+    }
+}
+
+.new-too {
+    h3,
+    p {
+        text-align: center;
+    }
     .new-too-breakout1,
     .new-too-breakout2 {
-        position: relative;
-        flex-grow: 1;
-        margin: 0;
+        @include mq('tablet-wide'){
+            position: relative;
+            flex-grow: 1;
+            margin: 0;
+        }
         figure {
-            position: absolute;
+            @include mq('tablet-wide'){
+                position: absolute;
+            }
         }
     }
     .new-too-breakout1 {
@@ -87,8 +132,11 @@ span {
 }
 
 .new-too .flexbox {
-    width: 50%;
-    margin: 50px;
+    margin: 35px 30px 25px 30px;
+    @include mq('tablet-wide'){
+        width: 50%;
+        margin: 50px;
+    }
 }
 
 .options {
@@ -99,18 +147,33 @@ span {
 
 .icon-contact {
     background-color: $pale-mauve;
-    padding: 145px 0 40px 0;
     flex-grow: 1;
-    transition: 0.5s;
-    @include mqv('vertical-break2') {
-        padding-top: 40px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    @include mq('tablet'){
+        padding: 145px 0 40px 0;
     }
-    @include mqv('vertical-break3') {
-        padding-top: 140px;
-    }
+    // @include mqv('vertical-break2') {
+    //     padding-top: 40px;
+    // }
+    // @include mqv('vertical-break3') {
+    //     padding-top: 140px;
+    // }
     .flexbox {
-        margin: 10px;
-        flex-grow: 1;
+        flex-direction: column;
+        @include mq('tablet-wide'){
+            flex-direction: row;
+            margin: 10px;
+            flex-grow: 1;
+        }
+    }
+    i {
+        padding: 10px;
+        @include mq('tablet-wide'){
+            padding: 0;
+        }
     }
 }
 
@@ -133,6 +196,13 @@ span {
 
 .popular-div {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include mq('tablet-wide'){
+        justify-content:flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
     figure {
         display: block;
         max-width: 40%;
@@ -144,11 +214,19 @@ span {
 }
 
 .popular-typography {
-    flex-direction: column;
-    width: 60%;
-    margin: 30px 0 30px 50px;
-    button {
-        margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    @include mq('tablet-wide'){
+        flex-direction: column;
+        width: 60%;
+        margin: 30px 0 30px 50px;
+        justify-content: left;
+        text-align: left;
+        button {
+            margin: 0;
+        }
     }
 }
 
@@ -157,7 +235,17 @@ span {
 .gallery-section {
     background-color: $pale-mauve;
     figure {
-        margin: 50px 30px;
-        width: calc((100% / 3) - 60px);
+        margin: 30px auto;
+
+        @include mq('tablet'){
+            margin: 50px 30px;
+            width: calc((100% / 3) - 60px);
+        }
+    }
+    .flexbox {
+        flex-direction: column;
+        @include mq('tablet'){
+            flex-direction: row;
+        }
     }
 }
