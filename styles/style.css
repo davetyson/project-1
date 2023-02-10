@@ -644,6 +644,14 @@ span {
       flex-wrap: wrap;
   margin: -30px;
 }
+@media only screen and (min-width: 1550px) {
+  .blog-main .blog-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 .blog-main h2 {
   margin-top: -35%;
 }
@@ -660,10 +668,37 @@ aside {
   position: absolute;
   top: 70vh;
   height: auto;
+  margin-left: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 1550px) {
+  .blog-section {
+    position: relative;
+    top: 0;
+    margin-left: 0;
+  }
+}
+.blog-section figure {
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+@media only screen and (min-width: 1550px) {
+  .blog-section figure {
+    position: relative;
+  }
 }
 .blog-section figure img {
   -webkit-box-shadow: -20px 20px #FE6F19;
           box-shadow: -20px 20px #FE6F19;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 1550px) {
+  .blog-section figure img {
+    position: absolute;
+    top: -450px;
+  }
 }
 .blog-section h2 {
   margin: 50px 30px;
@@ -677,6 +712,20 @@ aside {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: 110px 30px 30px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 1024px) {
+  .comment {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .comment {
+    width: 100%;
+    padding-left: 45%;
+    margin-top: 250px;
+  }
 }
 .comment .flexbox {
   -webkit-box-orient: horizontal;
@@ -707,6 +756,13 @@ aside {
 .comment-form {
   width: 100%;
   margin: 40px auto 0 auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 1550px) {
+  .comment-form {
+    padding-left: 0;
+  }
 }
 .comment-form form input,
 .comment-form form textarea {

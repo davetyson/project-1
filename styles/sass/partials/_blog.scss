@@ -20,6 +20,9 @@
     .blog-wrap {
         flex-wrap: wrap;
         margin: -30px;
+        @include mq('extra-size') {
+            flex-direction: row;
+        }
     }
     h2 {
         margin-top: -35%;
@@ -37,9 +40,25 @@ aside {
     position: absolute;
     top: 70vh;
     height: auto;
+    margin-left: auto;
+    transition: 0.5s;
+    @include mq('extra-size') {
+        position: relative;
+        top: 0;
+        margin-left: 0;
+    }
     figure {
+        transition: 0.5;
+        @include mq('extra-size') {
+            position: relative;
+        }
         img {
         box-shadow: -20px 20px $orange;
+        transition: 0.5s;
+        @include mq('extra-size') {
+            position: absolute;
+            top: -450px;
+        }
         }
     }
     h2 {
@@ -54,6 +73,15 @@ aside {
     width: 55%;
     align-self: flex-end;
     margin: 110px 30px 30px 30px;
+    transition: 0.5s;
+    @include mq('tablet-wide') {
+        margin-top: 70px;
+    }
+    @include mq('extra-size') {
+        width: 100%;
+        padding-left: 45%;
+        margin-top: 250px;
+    }
     .flexbox {
         flex-direction: row;
     }
@@ -76,6 +104,10 @@ aside {
 .comment-form {
     width: 100%;
     margin: 40px auto 0 auto;
+    transition: 0.5s;
+    @include mq('extra-size') {
+        padding-left: 0;
+    }
     form {
         input,
         textarea {
