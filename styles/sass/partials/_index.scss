@@ -7,6 +7,12 @@
 
 .header-index {
     background-image: url(../assets/header-image.jpg);
+    .wrapper {
+        position: relative;
+        @include mq('phablet'){
+            position: static;
+        }
+    }
     h1 {
         margin-top: 40px;
         width: 100%;
@@ -24,12 +30,15 @@ span {
     text-align: center;
     align-items: center;
     padding-top: 30px;
+    position: absolute;
+    top: 25vh;
     @include mq('phablet'){
         position: absolute;
         flex-direction: row;
         text-align: left;
     }
     h1 {
+        margin: 0 auto;
         padding-top: 60px;
         @include mq('phablet'){
             padding-top: 0px;
@@ -37,23 +46,15 @@ span {
     }
     figure {
         margin: 0 auto;
-        padding: 150px 50px 0 50px;
-        // display: block;
+        padding: 200px 50px 0 50px;
+        top: 25vh;
         @include mq('phablet') {
             position: relative;
+            padding-top: 80px;
             top: 35vh;
             margin-left: auto;
             flex-basis: auto;
         }
-    }
-    @include mqv('vertical-break2') {
-        top: 15vh;
-    }
-    @include mqv('vertical-break4') {
-        top: 23vh;
-    }
-    @include mqv('vertical-break5') {
-        top: 30vh;
     }
 }
 

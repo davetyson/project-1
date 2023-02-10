@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 /* Typography styles */
 
@@ -21,8 +22,11 @@ h2, h3, h4, h5, h6 {
 
 .header-blog h1,
 .header-contact h1 {
-    font-size: 4rem;
-    line-height: 92px;
+    font-size: 3rem;
+    @include mq('phablet'){
+        font-size: 4rem;
+        line-height: 92px;
+    }
 }
 
 h2 {

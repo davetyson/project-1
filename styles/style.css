@@ -308,7 +308,6 @@ button {
 .header-contact h1,
 .header-blog h1 {
   position: absolute;
-  right: 45%;
   top: 35vh;
   margin: 0 auto;
   text-transform: uppercase;
@@ -323,6 +322,14 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.header-blog h1 {
+  right: 45%;
+}
+
+.header-contact h1 {
+  right: 30%;
 }
 
 .flexbox {
@@ -361,8 +368,14 @@ h2, h3, h4, h5, h6 {
 
 .header-blog h1,
 .header-contact h1 {
-  font-size: 4rem;
-  line-height: 92px;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 560px) {
+  .header-blog h1,
+  .header-contact h1 {
+    font-size: 4rem;
+    line-height: 92px;
+  }
 }
 
 h2 {
@@ -519,6 +532,7 @@ i {
   text-align: end;
   padding: 0;
   margin: 10px 0;
+  text-transform: uppercase;
 }
 .hamburger-wrap ul li a {
   color: #4C0341;
@@ -563,6 +577,14 @@ footer {
 .header-index {
   background-image: url(../assets/header-image.jpg);
 }
+.header-index .wrapper {
+  position: relative;
+}
+@media only screen and (min-width: 560px) {
+  .header-index .wrapper {
+    position: static;
+  }
+}
 .header-index h1 {
   margin-top: 40px;
   width: 100%;
@@ -584,6 +606,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
+  position: absolute;
+  top: 25vh;
 }
 @media only screen and (min-width: 560px) {
   .header-content {
@@ -596,6 +620,7 @@ footer {
   }
 }
 .header-content h1 {
+  margin: 0 auto;
   padding-top: 60px;
 }
 @media only screen and (min-width: 560px) {
@@ -605,30 +630,17 @@ footer {
 }
 .header-content figure {
   margin: 0 auto;
-  padding: 150px 50px 0 50px;
+  padding: 200px 50px 0 50px;
+  top: 25vh;
 }
 @media only screen and (min-width: 560px) {
   .header-content figure {
     position: relative;
+    padding-top: 80px;
     top: 35vh;
     margin-left: auto;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-  }
-}
-@media only screen and (min-height: 500px) {
-  .header-content {
-    top: 15vh;
-  }
-}
-@media only screen and (min-height: 951px) {
-  .header-content {
-    top: 23vh;
-  }
-}
-@media only screen and (min-height: 1201px) {
-  .header-content {
-    top: 30vh;
   }
 }
 

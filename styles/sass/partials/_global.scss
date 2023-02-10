@@ -67,7 +67,6 @@ button {
 .header-contact h1,
 .header-blog h1 {
     position: absolute;
-    right: 45%;
     top: 35vh;
     margin: 0 auto;
     text-transform: uppercase;
@@ -75,6 +74,12 @@ button {
         display: flex;
         justify-content: center;
     }
+}
+.header-blog h1 {
+    right: 45%;
+}
+.header-contact h1 {
+    right: 30%;
 }
 .flexbox {
     display: flex;
