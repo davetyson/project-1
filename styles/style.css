@@ -839,6 +839,11 @@ aside figure {
   top: 10px;
   right: 5%;
 }
+@media only screen and (min-width: 1550px) {
+  aside figure {
+    right: -35%;
+  }
+}
 aside ul {
   list-style: disc;
   margin-top: 10px;
