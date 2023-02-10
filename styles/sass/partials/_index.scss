@@ -161,12 +161,6 @@ span {
     @include mq('tablet'){
         padding: 145px 0 40px 0;
     }
-    // @include mqv('vertical-break2') {
-    //     padding-top: 40px;
-    // }
-    // @include mqv('vertical-break3') {
-    //     padding-top: 140px;
-    // }
     .flexbox {
         flex-direction: column;
         @include mq('tablet-wide'){
