@@ -417,6 +417,8 @@ i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .nav-bar .logo {
   -webkit-box-flex: 1;
@@ -425,13 +427,21 @@ i {
   padding-top: 20px;
 }
 
-nav ul {
+.main-nav {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .main-nav {
+    display: block;
+  }
+}
+.main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
 }
-nav ul li {
+.main-nav ul li {
   padding: 30px 0 10px 10px;
   text-transform: uppercase;
   display: inline-block;
@@ -439,17 +449,85 @@ nav ul li {
       -ms-flex-pack: right;
           justify-content: right;
 }
-nav ul a {
+.main-nav ul a {
   padding: 10px;
   text-align: center;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-nav ul .current-page,
-nav ul a:hover,
-nav ul a:active {
+.main-nav ul .current-page,
+.main-nav ul a:hover,
+.main-nav ul a:active,
+.main-nav ul a:focus {
   color: #FFF;
   background-color: #4C0341;
+}
+
+.hamburger-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  z-index: 1;
+}
+@media only screen and (min-width: 1024px) {
+  .hamburger-wrap {
+    display: none;
+  }
+}
+.hamburger-wrap #hamburger {
+  background-color: transparent;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.hamburger-wrap ul {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.hamburger-wrap ul li {
+  text-align: end;
+  padding: 0;
+  margin: 10px 0;
+}
+.hamburger-wrap ul li a {
+  color: #4C0341;
+  background-color: #FFF;
+  display: inline-block;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hamburger-wrap ul li .current-page,
+.hamburger-wrap ul li a:hover,
+.hamburger-wrap ul li a:active,
+.hamburger-wrap ul li a:focus {
+  color: #FFF;
+  background-color: #4C0341;
+}
+
+.hamburger-wrap:hover i,
+.hamburger-wrap:active i,
+.hamburger-wrap:focus i {
+  padding-top: 6px;
+  margin-right: 2px;
+}
+.hamburger-wrap:hover ul,
+.hamburger-wrap:active ul,
+.hamburger-wrap:focus ul {
+  display: inline-block;
 }
 
 /* Footer styles */

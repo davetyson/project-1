@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 
 /* Nav-Bar styles */
@@ -7,30 +8,93 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    transition: 0.5s;
     .logo {
         flex-grow: 1;
         padding-top: 20px;
     }
 }
 
-nav ul {
-    display: flex;
-    width: 50%;
-    li {
-        padding: 30px 0 10px 10px;
-        text-transform: uppercase;
-        display: inline-block;
-        justify-content: right;
+.main-nav{
+    @include mq('tablet-wide') {
+        display: block;
     }
-    a {
-        padding: 10px;
-        text-align: center;
-        transition: 0.1s;
-    }
-    .current-page,
-    a:hover,
-    a:active {
-        color: $white;
-        background-color: $plum-purple;
+    display: none;
+    ul {
+        display: flex;
+        width: 50%;
+        li {
+            padding: 30px 0 10px 10px;
+            text-transform: uppercase;
+            display: inline-block;
+            justify-content: right;
+        }
+        a {
+            padding: 10px;
+            text-align: center;
+            transition: 0.1s;
+        }
+        .current-page,
+        a:hover,
+        a:active,
+        a:focus {
+            color: $white;
+            background-color: $plum-purple;
+        }
     }
 }
+
+.hamburger-wrap {
+    @include mq('tablet-wide'){
+        display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: space-evenly;
+    z-index: 1;
+    #hamburger {
+        background-color: transparent;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+    ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        li {
+            text-align: end;
+            padding: 0;
+            margin: 10px 0;
+            a {
+                color: $plum-purple;
+                background-color: $white;
+                display: inline-block;
+                padding: 10px;
+                transition: 0.5s;
+            }
+            .current-page,
+            a:hover,
+            a:active,
+            a:focus {
+                color: $white;
+                background-color: $plum-purple;
+            }
+        }
+    }
+}
+
+.hamburger-wrap:hover,
+.hamburger-wrap:active,
+.hamburger-wrap:focus {
+    i {
+        padding-top: 6px;
+        margin-right: 2px;
+    }
+    ul {
+        display: inline-block;
+    }
+}
+ 
