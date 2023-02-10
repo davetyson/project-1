@@ -940,35 +940,52 @@ aside h4 {
 /* Contact section */
 .contact-section {
   background-color: #FAE5FF;
-  height: 40vh;
+  padding-top: 20px;
+  height: 100%;
   -webkit-transition: 0.5;
   transition: 0.5;
 }
-@media only screen and (min-height: 0) {
-  .contact-section {
-    padding-bottom: 300px;
+.contact-section .mobile-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .contact-section .mobile-column {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
   }
 }
-@media only screen and (min-height: 500px) {
-  .contact-section {
-    padding-bottom: 300px;
-  }
-}
-.contact-section .contact-info {
+.contact-section .mobile-column .contact-info {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: -30px;
+  margin-bottom: 80px;
 }
-.contact-section .contact-info .flexbox {
-  margin-right: 100px;
+.contact-section .mobile-column .contact-info .flexbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.contact-section .contact-info h3 {
+@media only screen and (min-width: 768px) {
+  .contact-section .mobile-column .contact-info .flexbox {
+    margin-right: 100px;
+  }
+}
+.contact-section .mobile-column .contact-info h3 {
   margin-top: 2vh;
   font-size: 1.4rem;
 }
-.contact-section .contact-info p {
+.contact-section .mobile-column .contact-info p {
   margin: 5px 0;
 }
 
@@ -980,16 +997,30 @@ i {
 }
 
 .contact-position {
-  position: relative;
+  padding-bottom: 80px;
   width: 100%;
 }
+@media only screen and (min-width: 768px) {
+  .contact-position {
+    position: relative;
+  }
+}
 .contact-position .contact-form {
-  width: calc(50vw - 10%);
   margin: 0 auto;
+  width: 90%;
   -webkit-box-shadow: -30px 30px #FE6F19;
           box-shadow: -30px 30px #FE6F19;
-  position: absolute;
-  bottom: 5vh;
+}
+@media only screen and (min-width: 768px) {
+  .contact-position .contact-form {
+    width: calc(50vw - 10%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact-position .contact-form {
+    position: absolute;
+    bottom: 5vh;
+  }
 }
 .contact-position .contact-form form {
   background-color: #FFF;

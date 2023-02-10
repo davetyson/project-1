@@ -22,9 +22,9 @@ $breakpoints: (
     'tablet':       768px,
     // home: now the "blog" link is also basically invisible in the menu so I either need to flip colours, show it more, or start the hamburger. I could also push the "figure" image down another 10-20vh. This is probably where the images should flip into a column in the "new-too" section (img/text/button/img/text/button). This will also be where the icon-contact section goes column (icon/header/p * 4). "Popular" still looks good here but the button width could change so it's still on one line (check other buttons too once you've swapped the sections to columns, right now they are weird in rows but expect they'll be fixed in columns). may as well flip gallery here too so that it's columns
     // blog: the aside has officially started running crazy so put it under the comment form in a column. make sure to widen the aside so that it's in a wrapper sized white block with the info and under the photo (figure/header/p/header/ul). Reduce margin above "Comments" by at least 20%. Center the main in the wrapper.
-    // contact: put things in a column, so the form above the icons, then the email, then the other contact info, and then the footer. Centre and this should be all we need
+    // contact: put things in a column, so the form above the icons, then the email, then the other contact info, and then the footer. Centre and this should be all we need - DONE
     'tablet-wide':  1024px,
-    // home: this could be where hamburger comes in, as "about" is hard to read due to being on the pants in the bg photo. an alternative is to start showing backgrounds for all of them or invert the colours but this would affect every page if I do it in the nav partial
+    // home: this could be where hamburger comes in, as "about" is hard to read due to being on the pants in the bg photo. an alternative is to start showing backgrounds for all of them or invert the colours but this would affect every page if I do it in the nav partial - DONE
     // blog: could maybe reduce margin above "Comments" by 10%, very small thing - DONE
     // contact: get in touch is still a bit covered but because it starts in whitespace now it's pretty easy to figure out (I would have blurred image in a production situation anyways) NOT DOING, GOOD ENOUGH FOR NOW
     'desktop':      1248px,
