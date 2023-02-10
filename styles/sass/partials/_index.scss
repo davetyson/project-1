@@ -7,6 +7,9 @@
 
 .header-index {
     background-image: url(../assets/header-image.jpg);
+    // @media only screen and (orientation:landscape) and (max-width: 560px) {
+    //     height: 180vh;
+    // }
     .wrapper {
         position: relative;
         @include mq('phablet'){
@@ -51,7 +54,7 @@ span {
         @include mq('phablet') {
             position: relative;
             padding-top: 80px;
-            top: 35vh;
+            top: 25vh;
             margin-left: auto;
             flex-basis: auto;
         }
@@ -74,6 +77,8 @@ span {
         width: 70%;
         margin: 0 auto;
         padding: 140px 0 140px;
+        position: relative;
+        z-index: 2;
     }
 }
 

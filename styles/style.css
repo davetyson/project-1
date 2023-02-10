@@ -637,7 +637,7 @@ footer {
   .header-content figure {
     position: relative;
     padding-top: 80px;
-    top: 35vh;
+    top: 25vh;
     margin-left: auto;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -667,6 +667,8 @@ footer {
   width: 70%;
   margin: 0 auto;
   padding: 140px 0 140px;
+  position: relative;
+  z-index: 2;
 }
 
 /* New additions & too many options section */
