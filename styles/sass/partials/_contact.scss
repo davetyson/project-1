@@ -15,11 +15,18 @@
 .contact-section {
     background-color: $pale-mauve;
     height: 40vh;
+    transition: 0.5;
+    @include mqv('vertical-break1') {
+        padding-bottom: 300px;
+    }
+    @include mqv('vertical-break2') {
+        padding-bottom: 300px;
+    }
     .contact-info {
         flex-direction: column;
         margin-bottom: -30px;
         .flexbox {
-            margin-right: 200px;
+            margin-right: 100px;
         }
         h3 {
             margin-top: 2vh;

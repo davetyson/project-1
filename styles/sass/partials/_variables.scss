@@ -31,8 +31,15 @@ $breakpoints: (
     // "get in touch" is a little bit hard to read on contact because of the shoe in the background, would have to blur the background or move the photo to show more whitespace here. otherwise perfect - NOT DOING, GOOD ENOUGH FOR NOW
     'desktop-wide': 1440px,
     // perfect - DONE
-    'extra-size': 1550px
+    'extra-size': 1550px,
     // blog: may need to position article to the right a little bit - DONE
+
+    //vertical breakpoints
+    'vertical-break1': 0,
+    'vertical-break2': 500px,
+    'vertical-break3': 726px,
+    'vertical-break4': 951px,
+    'vertical-break5': 1201px
 );
 
 // VERTICAL MIXIN TWEAK IDEAS
@@ -42,11 +49,11 @@ $breakpoints: (
     // blog: needs to be a column like the mobile width break
     // contact: make sure the footer has plenty of extra room. needs to be a column like with the mobile width break
 // 500-725px
-    // home: adjust the header figure so it pushes up towards the header 10-25vh. maybe shrink the icon contact top margin/padding a tiny bit so it's more even now
+    // home: adjust the header figure so it pushes up towards the header 10-25vh. maybe shrink the icon contact top margin/padding a tiny bit so it's more even now - DONE
     // contact: add a bit of margin to the footer below the postal code so the text of the contact isn't cut off
 // 726-950px: good
 // 951-1200px:
-    // home: adjust header figure to push it down about 10-25vh. can push the new-too top image down a bit too
-    // blog: less margin above Comments if still an issue after the width changes
+    // home: adjust header figure to push it down about 10-25vh. can push the new-too top image down a bit too - DONE
+    // blog: less margin above Comments if still an issue after the width changes - DONE
 // 1201-1500px
-    // home: another adjustment of the header figure is probably a good idea but then just have this be the max
+    // home: another adjustment of the header figure is probably a good idea but then just have this be the max - DONE

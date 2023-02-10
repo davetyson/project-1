@@ -41,20 +41,17 @@ aside {
     top: 70vh;
     height: auto;
     margin-left: auto;
-    transition: 0.5s;
     @include mq('extra-size') {
         position: relative;
         top: 0;
         margin-left: 0;
     }
     figure {
-        transition: 0.5;
         @include mq('extra-size') {
             position: relative;
         }
         img {
         box-shadow: -20px 20px $orange;
-        transition: 0.5s;
         @include mq('extra-size') {
             position: absolute;
             top: -450px;
@@ -73,7 +70,6 @@ aside {
     width: 55%;
     align-self: flex-end;
     margin: 110px 30px 30px 30px;
-    transition: 0.5s;
     @include mq('tablet-wide') {
         margin-top: 70px;
     }
@@ -153,8 +149,9 @@ aside {
     }
     ul {
         list-style: disc;
+        margin-top: 10px;
     }
     h4 {
-        margin: 20px 0;
+        margin: 20px 0 10px 0;
     }
 }

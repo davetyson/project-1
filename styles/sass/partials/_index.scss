@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 /* Home page styles */
 
@@ -23,6 +24,16 @@ span {
         top: 45vh;
         margin-left: auto;
         flex-basis: auto;
+        transition: 0.5;
+    }
+    @include mqv('vertical-break2') {
+        top: 15vh;
+    }
+    @include mqv('vertical-break4') {
+        top: 23vh;
+    }
+    @include mqv('vertical-break5') {
+        top: 30vh;
     }
 }
 
@@ -90,6 +101,13 @@ span {
     background-color: $pale-mauve;
     padding: 145px 0 40px 0;
     flex-grow: 1;
+    transition: 0.5s;
+    @include mqv('vertical-break2') {
+        padding-top: 40px;
+    }
+    @include mqv('vertical-break3') {
+        padding-top: 140px;
+    }
     .flexbox {
         margin: 10px;
         flex-grow: 1;
