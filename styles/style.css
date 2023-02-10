@@ -292,19 +292,33 @@ button {
 
 .header-contact,
 .header-blog {
-  height: 100vh;
+  height: 80vh;
+}
+@media only screen and (min-width: 1024px) {
+  .header-contact,
+  .header-blog {
+    height: 100vh;
+  }
 }
 
 .header-contact h1,
 .header-blog h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 30vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: absolute;
+  right: 45%;
+  top: 35vh;
+  margin: 0 auto;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 1024px) {
+  .header-contact h1,
+  .header-blog h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .flexbox {
@@ -528,6 +542,7 @@ i {
 .hamburger-wrap:active ul,
 .hamburger-wrap:focus ul {
   display: inline-block;
+  z-index: 2;
 }
 
 /* Footer styles */
@@ -732,6 +747,8 @@ span {
 /* Header styles */
 .header-blog {
   background-image: url(../assets/blog-header.jpg);
+  background-color: #FAE5FF;
+  margin-bottom: 30px;
 }
 
 /* Blog post section */
@@ -746,10 +763,12 @@ span {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.blog-main .blog-wrap {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -30px;
+@media only screen and (min-width: 768px) {
+  .blog-main .blog-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -30px;
+  }
 }
 @media only screen and (min-width: 1550px) {
   .blog-main .blog-wrap {
@@ -759,8 +778,15 @@ span {
             flex-direction: row;
   }
 }
-.blog-main h2 {
-  margin-top: -35%;
+@media only screen and (min-width: 1024px) {
+  .blog-main h2 {
+    margin-top: -32%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .blog-main h2 {
+    margin-top: -20%;
+  }
 }
 
 .blog-section,
@@ -768,14 +794,16 @@ aside {
   background-color: #FFF;
 }
 
-.blog-section {
-  width: 55%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  position: absolute;
-  top: 70vh;
-  height: auto;
-  margin-left: auto;
+@media only screen and (min-width: 768px) {
+  .blog-section {
+    width: 55%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: absolute;
+    top: 70vh;
+    height: auto;
+    margin-left: auto;
+  }
 }
 @media only screen and (min-width: 1550px) {
   .blog-section {
@@ -807,14 +835,15 @@ aside {
 }
 
 .comment {
-  width: 55%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin: 110px 30px 30px 30px;
+  padding-top: 30px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .comment {
-    margin-top: 70px;
+    width: 55%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 30px;
+    padding-top: 50px;
   }
 }
 @media only screen and (min-width: 1550px) {
@@ -851,10 +880,16 @@ aside {
 }
 
 .comment-form {
-  width: 100%;
-  margin: 40px auto 0 auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .comment-form {
+    width: 100%;
+    margin: 40px auto 0 auto;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
 @media only screen and (min-width: 1550px) {
   .comment-form {
@@ -900,22 +935,29 @@ aside {
 }
 
 aside {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 25%;
   margin: 50px;
-  padding: 35% 50px 50px 50px;
-  position: relative;
+  padding: 50px;
 }
-aside figure {
-  width: 150%;
-  position: absolute;
-  top: 10px;
-  right: 5%;
+@media only screen and (min-width: 768px) {
+  aside {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 25%;
+    position: relative;
+    padding: 35% 50px 50px 50px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  aside figure {
+    width: 150%;
+    position: absolute;
+    top: 10px;
+    right: 5%;
+  }
 }
 @media only screen and (min-width: 1550px) {
   aside figure {

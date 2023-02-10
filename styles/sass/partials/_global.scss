@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 /* Global & Wrapper Styles */
 html {
@@ -56,14 +57,22 @@ button {
 
 .header-contact,
 .header-blog {
-    height: 100vh;
+    height: 80vh;
+    @include mq('tablet-wide'){
+        height: 100vh;
+    }
 }
 .header-contact h1,
 .header-blog h1 {
-    display: flex;
-    padding-top: 30vh;
-    justify-content: center;
+    position: absolute;
+    right: 45%;
+    top: 35vh;
+    margin: 0 auto;
     text-transform: uppercase;
+    @include mq('tablet-wide'){
+        display: flex;
+        justify-content: center;
+    }
 }
 .flexbox {
     display: flex;
