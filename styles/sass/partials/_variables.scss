@@ -1,3 +1,5 @@
+/* Style guide colors, fonts, and box shadow */
+
 $plum-purple: #4C0341;
 $orange: #FE6F19;
 $white: #FFF;
@@ -7,6 +9,8 @@ $pale-mauve: #FAE5FF;
 $pompiere: 'Pompiere', cursive;
 $lato: 'Lato', sans-serif;
 $box-shadow: 20px 20px $orange;
+
+/* Media query breakpoint variables */
 
 $breakpoints: (
     'phone':        400px,

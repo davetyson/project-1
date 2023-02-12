@@ -9,6 +9,9 @@
     background-image: url(../assets/blog-header.jpg);
     background-color: $pale-mauve;
     margin-bottom: 30px;
+    h1{
+        right: 45%;
+    }
 }
 
 /* Blog post section */
@@ -76,6 +79,8 @@ aside {
         margin: 30px;
     }
 }
+
+/* Blog comment section */
 
 .comment {
     padding-top: 30px;
@@ -145,10 +150,13 @@ aside {
             margin: 10px 0;
         }
         button {
+            background-color: $plum-purple;
             @include form-button(100%);
         }
     }
 }
+
+/* Aside/sidebar */
 
 aside {
     margin: 50px;

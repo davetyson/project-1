@@ -2,14 +2,17 @@
 @use "./mixins" as *;
 
 /* Global & Wrapper Styles */
+
 html {
     font-family: $lato;
     background-color: $white;
     color: $black;
 }
+
 body {
     font-size: 125%;
 }
+
 header {
     background-color: $white;
     background-position: center;
@@ -17,31 +20,42 @@ header {
     background-size: cover;
     height: 100vh;
 }
+
 section {
     height: 100%;
 }
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
+
 a {
     color: $black;
     text-decoration: none;
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 fieldset {
     border: none;
     margin: 0;
     padding: 0;
 }
+
 figure {
     margin: 0;
 }
+
+i {
+    margin-right: 20px;
+}
+
 button {
     background-color: $brown-red;
     color: $white;
@@ -52,10 +66,6 @@ button {
         width: 30%;
     }
 }
-.comment button,
-.about button {
-    background-color: $plum-purple;
-}
 
 .header-contact,
 .header-blog {
@@ -63,9 +73,7 @@ button {
     @include mq('tablet-wide'){
         height: 100vh;
     }
-}
-.header-contact h1,
-.header-blog h1 {
+    h1 {
     position: absolute;
     top: 35vh;
     margin: 0 auto;
@@ -73,18 +81,15 @@ button {
     @include mq('tablet-wide'){
         display: flex;
         justify-content: center;
+        }
     }
 }
-.header-blog h1 {
-    right: 45%;
-}
-.header-contact h1 {
-    right: 30%;
-}
+
 .flexbox {
     display: flex;
     flex-direction: row;
 }
+
 .wrapper {
     max-width: 1200px;
     width: 90%;
