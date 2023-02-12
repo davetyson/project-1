@@ -7,9 +7,6 @@
 
 .header-index {
     background-image: url(../assets/header-image.jpg);
-    // @media only screen and (orientation:landscape) and (max-width: 560px) {
-    //     height: 180vh;
-    // }
     .wrapper {
         position: relative;
         @include mq('phablet'){
