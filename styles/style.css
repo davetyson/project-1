@@ -568,32 +568,48 @@ footer {
   background-color: rgba(255, 255, 255, 0.7);
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  opacity: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   z-index: 3;
-  position: absolute;
+  position: fixed;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .pop-contain .pop-message {
   padding: 30px;
   margin: 0 auto;
   text-align: center;
   max-width: 800px;
-  width: 50%;
+  width: 90%;
   border: 3px solid #0D0D0D;
   background-color: #FFF;
 }
+@media only screen and (min-width: 768px) {
+  .pop-contain .pop-message {
+    width: 50%;
+  }
+}
 .pop-contain .pop-message h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .pop-contain .pop-message h2 {
+    font-size: 2rem;
+  }
 }
 .pop-contain .pop-message h3 {
   text-transform: none;
   font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #0D0D0D;
+}
+@media only screen and (min-width: 768px) {
+  .pop-contain .pop-message h3 {
+    font-size: 1.5rem;
+  }
 }
 .pop-contain .pop-message button {
   width: 100%;
